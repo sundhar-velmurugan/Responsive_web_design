@@ -1,0 +1,48 @@
+#main{
+  margin: 2%;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: floralwhite;
+}
+#title{
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+#title>h1{
+  font-size: 28px;
+}
+#title>p{
+  font-size: 18px;
+}
+#img-div{
+  text-align: center;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+}
+#image{
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#img-caption{
+  padding-top: 5px;
+}
+#tribute-info{
+  text-align:justify;
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
+}
+#tribute-info>h2{
+  font-size: 24px;
+}
+#tribute-info>ul>li{
+  padding: 0.5em;
+}
+#read-more{
+  font-weight: 600;
+  font-size: 20px;
+}

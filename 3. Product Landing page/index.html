@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Product Landing Page</title>
+  
+  
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+  
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Signika+Negative');
+    @import url('https://fonts.googleapis.com/css?family=Tangerine');
+  </style>
+  
+</head>
+
+<body>
+
+
+<header id="header">
+  <div class="logo"><img src="http://pluspng.com/img-png/avengers-logo-png-marvel-the-hulk-thor-iron-man-captain-america-black-widow-nick-fury-text-font-1516.png" alt="Avengers Logo" id="header-img"></div>
+  <nav id="nav-bar">
+    <ul>
+      <li><a href="#product-block" class="nav-link">Products</a></li>
+      <li><a href="#video-block" class="nav-link">How it works</a></li>
+      <li><a href="#form-block" class="nav-link">Register</a></li>
+    </ul>
+  </nav>
+  <div class = "menu-toggle">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+</header>
+<div id="form-block">
+  <h2>Register to get notified on new products</h2>  
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <input type="email" id="email" name="email" placeholder="Enter your email address">
+    <input type="submit" id="submit" value="Get notifications!">
+  </form>
+</div>
+<div id="video-block">
+  <h2>Take a look at some of our products in action</h2>
+  <iframe id="video" src="https://www.youtube.com/embed/udKE1ksKWDE">
+  </iframe>
+</div>
+<h2 id="product">Available Products</h2>
+<div id="product-block">
+  <div class="card">
+    <div class="card-img-container">
+      <img src="https://www.dhresource.com/webp/m/0x0s/f2-albu-g7-M00-E8-D9-rBVaSVsnYcOARlyUAAHzHxi6pdM985.jpg/dhlfull-metal-cattoys-1-1-the-avengers-thor.jpg" alt="Thor's Hammer" class="card-img">
+    </div>
+    <div class="card-content-container">
+      <h1>Thor's Hammer</h1>
+      <p class="price">$99.99</p>
+      <p>It loves you and comes back to you if you ever loose it.</p>
+    </div>
+    <p><button>Add to Cart</button></p>
+  </div>
+  <div class="card">
+    <div class="card-img-container">
+      <img src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/f/fb/Marvel-avengers-infinity-war-iron-man-sixth-scale-figure-hot-toys-silo-903421.png/revision/latest/scale-to-width-down/240?cb=20180318221316" alt="Iron Man Suit" class="card-img">
+    </div>
+    <div class="card-content-container">
+      <h1>Iron Man Suit</h1>
+      <p class="price">$149.99</p>
+      <p>Geekiest stuff you will ever get from planet C-53.</p>
+    </div>
+    <p><button>Add to Cart</button></p>
+  </div>
+  <div class="card">
+    <div class="card-img-container">
+      <img src="https://www.pngkit.com/png/full/173-1732957_infinity-gauntlet-fist-png.png" alt="Infinity Stones" class="card-img">
+    </div>
+    <div class="card-content-container">
+      <h1>Infinity Stones</h1>
+      <p class="price"><span class="strike-through">$299.99</span> $249.99</p>
+      <p>Shiny jewellery of the cosmos. Grab 6 for the price of 5. [Gloves not included].</p>
+    </div>
+    <p><button>Add to Cart</button></p>
+  </div>
+  <div class="card">
+    <div class="card-img-container">
+      <img src="https://cdn3.whatculture.com/images/2016/09/81aaea51150a3610-600x338.jpg" alt="Caption America Shield" class="card-img">
+    </div>
+    <div class="card-content-container">
+      <h1>Caption America Shield</h1>
+      <p class="price">$129.99</p>
+      <p>Broken, but it is America's shield.</p>
+    </div>
+    <p><button>Add to Cart</button></p>
+  </div>
+  <div class="card">
+    <div class="card-img-container">
+      <img src="https://www.sideshow.com/storage/product-images/903471/iron-spider_marvel_silo.png" alt="Spiderman Suit" class="card-img">
+    </div>
+    <div class="card-content-container">
+      <h1>Spiderman Suit</h1>
+      <p class="price">$109.99</p>
+      <p>Jailbreaked suit, now with additional features.</p>
+    </div>
+    <p><button>Add to Cart</button></p>
+  </div>
+  <div class="card">
+    <div class="card-img-container">
+    <img src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/0/0d/Eternal_Flame.jpg/revision/latest/scale-to-width-down/310?cb=20130123170925" alt="Eternal Flame" class="card-img">
+    </div>
+    <div class="card-content-container">
+      <h1>Eternal Flame</h1>
+      <p class="price">$499.99</p>
+      <p>Light that never goes out.</p>
+    </div>
+    <p><button>Add to Cart</button></p>
+  </div>
+</div>
+<script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".menu-toggle").click(function(){
+      $('#nav-bar').toggleClass('active')
+    })
+  })
+</script>
+  
+  
+
+</body>
+
+</html>

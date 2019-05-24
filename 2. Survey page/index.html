@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey form</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Acme');
+  </style>
+  
+</head>
+
+<body>
+
+
+<h1 id="title">Survey Form</h1>
+<p id="description">Let us know about your opinion on Game of Thrones</p>
+<form id="survey-form">
+  <label for="name" id="name-label">* Name: </label>
+  <input type="text" id="name" placeholder="Enter your name" required>
+  <label for="email" id="email-label">* Email: </label>
+  <input type="email" id="email" placeholder="Enter your email" required>
+  <label for="number" id="number-label">* Age:</label>
+  <input type="number" id="number" placeholder="Age" min="5" max="99">
+  <label for="dropdown" id="dropdown-label">Do you like Game of Thrones?</label>
+  <select id="dropdown">
+    <option value="yes">Oh yes!!</option>
+    <option value="no">No, I hate it now</option>
+    <option value="maybe">I am confused</option>
+  </select>
+  <label id="radio-label">What made you most excited about Game of Thrones?</label>
+  <div id="radio">
+    <label for="dany">
+      <input type="radio" name="excited" id="dany" value="dany" checked>Daenerys Targaryen's miracles
+    </label>
+    <label for="bowl">
+      <input type="radio" name="excited" id="bowl" value="bowl">Clegane Bowl
+    </label>
+    <label for="living">
+      <input type="radio" name="excited" id="living" value="living">Fight between the living and the dead
+    </label>
+  </div>
+  <label id="checkbox-label">Which houses do you support?</label>
+  <div id="checkbox">
+    <label for="targ">
+     <input type="checkbox" name="support" id="targ" value="targ">Targaryen
+    </label>
+    <label for="stark">
+      <input type="checkbox" name="support" id="stark" value="stark">Stark
+    </label>
+    <label for="lan">
+      <input type="checkbox" name="support" id="lan" value="lan">Lannister
+    </label>
+    <label for="bar">
+      <input type="checkbox" name="support" id="bar" value="bar">Baratheon
+    </label>
+    <label for="tyr">
+      <input type="checkbox" name="support" id="tyr" value="tyr">Tyrell
+    </label>
+    <label for="gj">
+      <input type="checkbox" name="support" id="gj" value="gf">Greyjoy
+    </label>
+  </div>
+  <label for="textbox" id="textbox-label">Share the things that you will miss from GoT:</label>
+  <textarea id="textbox" placeholder="Share your thoughts here..."></textarea>
+  <button type="submit" id="submit">Submit</button>
+</form>
+  
+  
+
+</body>
+
+</html>
